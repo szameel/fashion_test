@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ANYWEAR — experimental essentials.">
+  <title>ANYWEAR — Core Tee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS OVER ₹4,000 <span>↗</span></div>
+
+  <header class="site-header">
+    <a class="logo" href="#">ANYWEAR<span>®</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">SHOP</a>
+      <a href="#about">ABOUT</a>
+      <a href="#journal">JOURNAL</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="bagBtn" aria-label="Shopping bag">BAG <b id="bagCount">0</b></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="shop">
+    <section class="product">
+      <div class="media-panel">
+        <div class="product-image-wrap">
+          <img id="productImage" src="assets/tee-black.png" alt="Core graphic long sleeve tee in black">
+          <div class="image-label">CORE / 001</div>
+        </div>
+        <div class="thumbs" aria-label="Product views">
+          <button class="thumb active"><img src="assets/tee-black.png" alt=""></button>
+          <button class="thumb"><img src="assets/tee-gray.png" alt=""></button>
+          <button class="thumb"><img src="assets/tee-white.png" alt=""></button>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <p class="eyebrow">ANYWEAR / ESSENTIALS</p>
+        <h1>CORE<br>GRAPHIC TEE</h1>
+        <div class="price-row"><span>₹2,990</span><small>INCL. TAX</small></div>
+        <p class="description">
+          Heavyweight cotton jersey with a distressed graphic treatment.
+          Relaxed silhouette, dropped shoulder and ribbed cuffs.
+        </p>
+
+        <div class="option">
+          <div class="option-head"><span>COLOR</span><strong id="colorName">BLACK</strong></div>
+          <div class="swatches">
+            <button class="swatch black selected" data-color="BLACK" data-img="assets/tee-black.png" aria-label="Black"></button>
+            <button class="swatch gray" data-color="GREY" data-img="assets/tee-gray.png" aria-label="Grey"></button>
+            <button class="swatch white" data-color="WHITE" data-img="assets/tee-white.png" aria-label="White"></button>
+          </div>
+        </div>
+
+        <div class="option">
+          <div class="option-head"><span>SIZE</span><button class="size-guide">SIZE GUIDE +</button></div>
+          <div class="sizes">
+            <button>S</button><button>M</button><button class="selected">L</button><button>XL</button><button>XXL</button>
+          </div>
+        </div>
+
+        <button class="add-to-bag" id="addBtn">ADD TO BAG <span>+</span></button>
+        <p class="microcopy">Ships in 2–4 working days · Easy returns</p>
+
+        <details open>
+          <summary>PRODUCT DETAILS <span>+</span></summary>
+          <p>450 GSM cotton jersey. Screen-printed distressed artwork. Garment washed for a worn-in hand feel.</p>
+        </details>
+        <details>
+          <summary>SHIPPING & RETURNS <span>+</span></summary>
+          <p>Dispatch within 2–4 working days. Returns accepted within 7 days on unworn items.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="marquee"><div>NOT MADE FOR EVERYONE · NOT MADE FOR EVERYONE · NOT MADE FOR EVERYONE · </div></section>
+
+    <section class="story" id="about">
+      <div><p class="eyebrow">THE IDEA</p><h2>EVERYDAY<br>UNIFORM,<br>REWORKED.</h2></div>
+      <p>ANYWEAR explores familiar clothing through unfamiliar graphics, materials and processes. Designed in India. Built for repeat wear.</p>
+    </section>
+
+    <section class="grid-section" id="journal">
+      <div class="section-head"><h2>MORE FROM THE DROP</h2><a href="#shop">VIEW ALL ↗</a></div>
+      <div class="product-grid">
+        <article><img src="assets/tee-black.png" alt=""><div><span>CORE / 001</span><b>₹2,990</b></div></article>
+        <article><img src="assets/tee-gray.png" alt=""><div><span>CORE / 002</span><b>₹2,990</b></div></article>
+        <article><img src="assets/tee-white.png" alt=""><div><span>CORE / 003</span><b>₹2,990</b></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">ANYWEAR<span>®</span></div>
+    <p>Experimental essentials / Kerala, India</p>
+    <div class="footer-links"><a href="#">Instagram</a><a href="#">Contact</a><a href="#">Shipping</a></div>
+  </footer>
+
+  <div class="toast" id="toast">ADDED TO BAG — CORE GRAPHIC TEE</div>
+  <script src="script.js"></script>
+</body>
+</html>
